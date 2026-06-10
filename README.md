@@ -25,7 +25,6 @@ Add your Tableau Public link here after publishing:
 <img width="2092" height="1182" alt="image" src="https://github.com/user-attachments/assets/e8f107b7-800d-475f-abdb-8cecdc45b2f9" />
 <img width="2086" height="1174" alt="image" src="https://github.com/user-attachments/assets/73897b2c-2656-441f-bee6-0c1226a791df" /> 
 <img width="2092" height="1184" alt="image" src="https://github.com/user-attachments/assets/23301ab0-9a93-43f0-a339-8ed59eda625b" />
-<img width="2117" height="1199" alt="image" src="https://github.com/user-attachments/assets/32e33d05-2ff3-465f-b9fe-c8deebff586d" />
 
 ---
 
@@ -239,6 +238,7 @@ This suggests that employee experience is not poor overall, but it is also not c
 ---
 
 ## 9. Recommended Actions
+<img width="2117" height="1199" alt="image" src="https://github.com/user-attachments/assets/32e33d05-2ff3-465f-b9fe-c8deebff586d" />
 
 ### 1. Implement role-specific retention plans
 
