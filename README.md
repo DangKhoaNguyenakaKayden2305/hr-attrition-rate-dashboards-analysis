@@ -1,218 +1,392 @@
 # HR People Analytics Dashboard
 
-An interactive HR analytics dashboard built to help HR managers, workforce planners, diversity and inclusion teams, and senior leaders monitor workforce risk, identify priority areas, and support evidence-based people decisions.
-
-The dashboard consolidates employee-level data into one executive view covering attrition, workforce composition, career mobility, pay equity indicators, training, absence, satisfaction, and workforce experience.
-
-![HR People Analytics Dashboard](HR_Dashboard.png)
+> An end-to-end people analytics project that turns raw HR workforce data into an executive Tableau dashboard, then translates the findings into a business presentation with clear insights and recommended actions.
 
 ---
 
-## Project Overview
+## 1. Project Links
 
-People-related risks are often tracked across separate HR reports, making it difficult for decision-makers to understand how attrition, demographics, salary distribution, training, absence, and employee satisfaction are connected.
+### Interactive Dashboard
 
-This project addresses that problem by developing a Tableau dashboard that turns fragmented HR data into a clear workforce monitoring and decision-support tool.
+Add your Tableau Public link here after publishing:
 
-The dashboard is designed to answer three key business questions:
+**Tableau Public:** https://public.tableau.com/app/profile/dang.khoa.nguyen3045/viz/HR_Attrition_Analysis_Dashboard/Dashboard1?publish=yes 
 
-1. Where is workforce risk concentrated?
-2. Which workforce factors may explain attrition or disengagement?
-3. What actions should HR leaders prioritise based on the evidence?
+### Dashboard Preview
+
+<img width="1605" height="952" alt="HR_Dashboard" src="https://github.com/user-attachments/assets/a59942e4-fa3d-4378-868e-58dc01807879" />
+
+
+### Presentation Deck
+
+<img width="2088" height="1176" alt="image" src="https://github.com/user-attachments/assets/b8741d3b-fb17-4bce-9017-c0a6fc0cc67c" />
+<img width="2027" height="1151" alt="image" src="https://github.com/user-attachments/assets/0c373875-3eb1-45f8-ba38-e218ae0e72fd" />
+<img width="2085" height="1178" alt="image" src="https://github.com/user-attachments/assets/a2b48043-7807-44c7-9978-4e9a676edf00" />
+<img width="2092" height="1182" alt="image" src="https://github.com/user-attachments/assets/e8f107b7-800d-475f-abdb-8cecdc45b2f9" />
+<img width="2086" height="1174" alt="image" src="https://github.com/user-attachments/assets/73897b2c-2656-441f-bee6-0c1226a791df" /> 
+<img width="2092" height="1184" alt="image" src="https://github.com/user-attachments/assets/23301ab0-9a93-43f0-a339-8ed59eda625b" />
+<img width="2117" height="1199" alt="image" src="https://github.com/user-attachments/assets/32e33d05-2ff3-465f-b9fe-c8deebff586d" />
 
 ---
 
-## Key Dashboard Metrics
+## 2. Project Background
 
-| Metric | Value |
-|---|---:|
-| Total Attritions | 405 |
-| Attrition Rate | 23% |
-| Active Employees | 1,380 |
+People-related risks are often reported separately across HR files, spreadsheets, and static reports. This makes it difficult for decision-makers to understand how attrition, workforce composition, career progression, salary distribution, training, absence, and employee satisfaction are connected.
+
+This project was built to solve that problem by creating a single HR People Analytics Dashboard that helps leaders monitor workforce health, identify people risks, and prioritise action.
+
+The final dashboard was designed for:
+
+* HR managers
+* Workforce planning teams
+* Diversity and inclusion teams
+* Senior business leaders
+* People and culture decision-makers
+
+---
+
+## 3. Business Problem
+
+The main business problem was:
+
+**How can HR leaders identify workforce risk and make better decisions when people data is spread across multiple indicators such as attrition, demographics, salary, training, absence, and satisfaction?**
+
+To answer this, I developed a dashboard that connects workforce KPIs with deeper diagnostic views. Instead of only reporting numbers, the dashboard is designed to explain where the risk is concentrated and what action should be taken.
+
+---
+
+## 4. My Data Analysis Workflow
+
+This project followed a full data analytics workflow from raw data exploration to dashboard storytelling.
+
+### Step 1: Understand the Business Context
+
+I started by defining the purpose of the dashboard and the key decisions it needed to support. The goal was not just to visualise HR data, but to help leaders answer practical workforce questions such as:
+
+* Which roles have higher attrition risk?
+* Is employee experience strong or only moderate?
+* Are career progression patterns showing signs of stagnation?
+* Does salary distribution require deeper pay equity review?
+* Is training activity translating into better workforce outcomes?
+
+### Step 2: Exploratory Data Analysis in Python
+
+I used Python to perform exploratory data analysis before building the dashboard. This helped me understand the structure, quality, and meaning of the dataset.
+
+The EDA process included:
+
+* Inspecting columns, data types, and missing values
+* Checking employee counts and active/terminated status
+* Reviewing attrition patterns across job roles and departments
+* Analysing salary bands, job levels, education, gender, and age groups
+* Creating career-related groupings such as tenure bands and promotion bands
+* Reviewing satisfaction and people experience score distributions
+* Identifying which variables would be useful for Tableau visualisation
+
+### Step 3: Data Cleaning and Preparation
+
+After the EDA stage, I cleaned and prepared the dataset for Tableau.
+
+The preparation process included:
+
+* Standardising field names
+* Creating grouped categories such as age bands, salary bands, and career bands
+* Preparing calculated fields for active employees, total attrition, and attrition rate
+* Checking that employee counts used distinct counting where required
+* Reshaping selected fields for heatmap-style analysis
+* Exporting the cleaned dataset for dashboard development
+<img width="1114" height="1261" alt="image" src="https://github.com/user-attachments/assets/2c806e61-33db-4f0e-bec1-126f8bb93773" />
+
+
+### Step 4: Build the Tableau Dashboard
+
+I imported the cleaned dataset into Tableau and built an interactive dashboard with a top-down executive structure.
+
+The dashboard starts with high-level KPIs, then moves into diagnostic sections covering role risk, demographics, career mobility, salary, training, absence, and satisfaction.
+
+Interactive filters were added for:
+
+* Department
+* Job Role
+* Gender
+* Age Band
+
+The dashboard was designed so users can explore workforce risk across different employee segments.
+
+### Step 5: Build the PowerPoint Insight Story
+
+After building the dashboard, I created a PowerPoint presentation to communicate the key insights and recommended actions.
+
+The PowerPoint deck was not just a screenshot summary. It was structured as a business story:
+
+1. Start with the overall workforce risk
+2. Show where attrition is concentrated
+3. Explain why demographics and salary need careful interpretation
+4. Highlight career mobility and training concerns
+5. Connect people experience indicators to retention risk
+6. End with clear, actionable HR recommendations
+
+### Step 6: Publish the Dashboard
+
+The final dashboard can be published to Tableau Public so that recruiters, hiring managers, or portfolio viewers can interact with it directly.
+
+After publishing, add the Tableau Public link here:
+
+```markdown
+[View the Interactive Dashboard on Tableau Public](Insert Tableau Public link here)
+```
+
+---
+
+## 5. Tools and Technologies
+
+| Tool       | Purpose                                          |
+| ---------- | ------------------------------------------------ |
+| Python     | Exploratory data analysis and data cleaning      |
+| Excel      | Data review and checking                         |
+| Tableau    | Interactive dashboard development                |
+| PowerPoint | Insight presentation and business storytelling   |
+| Word       | Written dashboard report                         |
+| GitHub     | Project documentation and portfolio presentation |
+
+---
+
+## 6. Dashboard Overview
+
+The dashboard provides one executive view of workforce health.
+
+### Key Metrics
+
+| Metric               |      Value |
+| -------------------- | ---------: |
+| Total Attritions     |        405 |
+| Attrition Rate       |        23% |
+| Active Employees     |      1,380 |
 | Average Satisfaction | 3.16 / 4.0 |
 
----
+### Dashboard Sections
 
-## Tools and Technologies
-
-- Tableau for dashboard design and interactive visualisation
-- Python for data cleaning and exploratory data analysis
-- Excel for data review and preparation
-- Dashboard filters for Department, Job Role, Gender, and Age Band
-- Calculated fields for attrition rate, active employees, salary bands, career bands, and satisfaction measures
-
----
-
-## Dataset Coverage
-
-The dashboard uses HR workforce data covering:
-
-- Employee status
-- Department
-- Job role
-- Job level
-- Hire year
-- Age band
-- Gender
-- ATSI identification
-- Education level
-- Salary band
-- Training sessions
-- Absence days
-- Years at company
-- Years in current role
-- Years since last promotion
-- Years with current manager
-- Satisfaction and people experience scores
+| Section                      | Purpose                                         |
+| ---------------------------- | ----------------------------------------------- |
+| KPI Summary                  | Shows overall workforce health                  |
+| Hiring Trend                 | Tracks employee hiring movement over time       |
+| Department and Role Analysis | Identifies high-risk workforce areas            |
+| Age and Gender Distribution  | Explains workforce composition                  |
+| Education Distribution       | Shows workforce qualification profile           |
+| Career Heatmap               | Highlights career mobility and progression risk |
+| Salary by Gender             | Screens salary distribution patterns            |
+| Job Level Distribution       | Shows seniority structure                       |
+| Training Sessions            | Measures learning participation                 |
+| Absence Days                 | Tracks working condition signals                |
+| Satisfaction Scorecard       | Shows employee experience distribution          |
 
 ---
 
-## Dashboard Sections
+## 7. Dashboard Preview
 
-### 1. Executive KPI Summary
+<img width="1605" height="952" alt="HR_Dashboard" src="https://github.com/user-attachments/assets/9e35ff1a-60fd-4611-89ee-f288ff3a641b" />
 
-The dashboard begins with key workforce indicators, including total attrition, attrition rate, active employees, average satisfaction, and hiring trend. This gives senior leaders a fast view of overall workforce health.
 
-### 2. Workforce Composition
 
-The demographic section visualises age distribution, gender distribution, ATSI identification, education level, department mix, and role-level patterns. This helps leaders understand the structure of the workforce before interpreting salary, promotion, or satisfaction outcomes.
 
-### 3. Attrition and Role Risk
+Recommended folder structure:
 
-The dashboard highlights attrition as a material and role-specific issue. Roles such as Solutions Architect and Sales Representative show higher attrition risk, suggesting that retention action should be targeted rather than generic.
-
-### 4. Career Mobility
-
-A career heatmap combines years at company, years in current role, years since last promotion, and years with current manager. This helps identify possible career stagnation and internal mobility risk.
-
-### 5. Salary and Job Level
-
-Salary distribution is shown by gender alongside job level distribution. These visuals are used as a pay equity screening tool, not a final conclusion. Further controlled analysis by role, level, tenure, and performance would be required before making equity claims.
-
-### 6. Training, Absence, and People Experience
-
-The dashboard tracks training session participation, absence day bands, and satisfaction-related indicators such as development, inclusion, job satisfaction, performance, SDG score, wellbeing, and work-life balance.
+```text
+images/
+└── hr_people_analytics_dashboard.png
+```
 
 ---
 
-## Key Insights
+## 8. Key Insights
 
 ### Insight 1: Attrition risk is material and role-specific
 
-The dashboard reports 405 total attritions and a 23% attrition rate. This suggests attrition is a significant workforce risk. Role-level analysis shows that turnover is not evenly distributed, so targeted retention strategies are more appropriate than broad HR initiatives.
+The dashboard shows 405 total attritions and a 23% attrition rate. This indicates that attrition is a material workforce issue, not a minor HR statistic.
 
-### Insight 2: Gender imbalance affects interpretation of equity indicators
+Role-level analysis shows that attrition is uneven across job roles. Some roles, such as Solutions Architect and Sales Representative, show higher risk than others. This means the organisation should not rely only on broad retention programs. Role-specific retention actions are needed.
 
-The workforce is approximately 78% male and 22% female. This does not prove inequity by itself, but it affects how salary, job level, and satisfaction outcomes should be interpreted. Controlled analysis is needed before drawing conclusions about pay or progression equity.
+### Insight 2: Workforce composition affects how HR metrics should be interpreted
+
+The workforce has a strong gender imbalance, with approximately 78% male employees and 22% female employees. This does not automatically prove inequity, but it changes how salary, job level, promotion, and satisfaction data should be interpreted.
+
+A responsible data analyst should avoid making strong equity claims from descriptive charts alone. Instead, the dashboard highlights where deeper controlled analysis is required.
 
 ### Insight 3: Career mobility should be monitored as a retention driver
 
-The career heatmap shows that career progression risk is multidimensional. Long tenure, long time in current role, and delayed promotion may increase disengagement risk if not monitored regularly.
+The career heatmap combines years at company, years in current role, years since last promotion, and years with current manager.
 
-### Insight 4: Salary distribution requires deeper pay equity analysis
+This helps identify whether employees may be staying in the organisation but not progressing. Career stagnation can become a retention risk when long-tenured employees do not see clear movement or promotion pathways.
 
-Salary by gender and job level visuals provide an initial screening view. However, salary patterns may be influenced by role mix, tenure, job level, and performance. A controlled pay equity audit would be required for deeper analysis.
+### Insight 4: Salary distribution requires controlled pay equity analysis
 
-### Insight 5: Training participation is strong, but impact is unclear
+The salary charts compare salary bands by gender, while the job level chart provides seniority context.
 
-A large share of employees attended multiple training sessions, but training volume does not automatically prove improved capability or career progression. Training should be linked to promotion readiness, satisfaction, and job movement.
+These visuals are useful as a screening tool, but they are not enough to prove pay equity or inequity. A deeper analysis should control for role, job level, tenure, department, and performance.
 
-### Insight 6: People experience is moderate-to-positive, not uniformly high
+### Insight 5: Training participation is strong, but outcome impact is unclear
 
-People experience scores cluster around 3/5 and 4/5. This suggests the workforce is not experiencing severe dissatisfaction overall, but several indicators should be monitored as early warning signals for attrition.
+The dashboard shows strong training participation, especially among employees with multiple training sessions.
+
+However, high training volume does not automatically mean better capability, promotion, or retention. The next analytical step would be to test whether training participation leads to improved promotion outcomes, satisfaction, or lower attrition.
+
+### Insight 6: People experience is moderate-to-positive, not uniformly strong
+
+The satisfaction scorecard shows that many people experience indicators cluster around middle-to-positive scores.
+
+This suggests that employee experience is not poor overall, but it is also not consistently excellent. Job satisfaction, wellbeing, and work-life balance should be monitored with attrition and absence as early-warning indicators.
 
 ---
 
-## Recommendations
+## 9. Recommended Actions
 
 ### 1. Implement role-specific retention plans
 
-Focus on high-risk roles with stronger attrition patterns. Recommended actions include exit interviews, workload reviews, salary benchmarking, promotion pathway reviews, and manager stay conversations.
+High-risk roles should be reviewed first. Recommended actions include:
+
+* Exit interview analysis
+* Workload review
+* Salary benchmarking
+* Promotion pathway review
+* Manager stay conversations
+* Targeted retention planning
 
 ### 2. Run a controlled pay equity audit
 
-Analyse salary outcomes by gender while controlling for job level, role, tenure, and performance. This would provide a more reliable view of whether pay inequity exists.
+Salary patterns should be analysed using a controlled method. The analysis should compare salary by gender while controlling for:
 
-### 3. Connect training to career progression metrics
+* Job role
+* Job level
+* Department
+* Tenure
+* Performance rating
+* Experience
 
-Track whether employees who attend more training sessions experience promotion, internal mobility, or improved satisfaction over time.
+### 3. Connect training to career progression
+
+Training should be linked to measurable outcomes, not only participation counts.
+
+Recommended follow-up analysis:
+
+* Training sessions vs promotion movement
+* Training sessions vs satisfaction score
+* Training sessions vs attrition risk
+* Training sessions vs job level movement
 
 ### 4. Launch a quarterly people experience review
 
-Review satisfaction, wellbeing, absence, and attrition together every quarter to identify early warning signals before they become larger workforce risks.
+HR leaders should review people experience indicators every quarter alongside attrition and absence patterns.
+
+This can help identify early warning signals before workforce issues become more serious.
 
 ---
 
-## Visualisation Design Approach
+## 10. PowerPoint Insight Story
 
-The dashboard uses a top-down executive layout:
+The PowerPoint deck was created to present the dashboard findings in a business-friendly way.
 
-1. KPI summary
-2. Hiring and attrition indicators
-3. Workforce composition
-4. Career mobility
-5. Salary and job level
-6. Training, absence, and satisfaction indicators
+### Slide Structure
 
-The design uses a consistent mauve, plum, and light-grey colour palette. Mauve represents the active contribution or selected value, grey provides background comparison, and darker plum highlights higher concentration in heatmaps.
+| Slide   | Story Purpose                                                             |
+| ------- | ------------------------------------------------------------------------- |
+| Slide 1 | Introduces the HR People Analytics Dashboard and key workforce KPIs       |
+| Slide 2 | Shows that attrition risk is material and role-specific                   |
+| Slide 3 | Explains how gender imbalance affects interpretation of equity indicators |
+| Slide 4 | Highlights career mobility as a retention driver                          |
+| Slide 5 | Shows why salary distribution requires controlled pay equity analysis     |
+| Slide 6 | Explains why training participation needs outcome testing                 |
+| Slide 7 | Shows that people experience is moderate-to-positive, not uniformly high  |
+| Slide 8 | Summarises recommended actions for HR leaders                             |
 
-The dashboard includes interactive filters for:
 
-- Department
-- Job Role
-- Gender
-- Age Band
 
----
-
-## Repository Structure
+Recommended folder structure:
 
 ```text
-.
+images/
+├── hr_people_analytics_dashboard.png
+├── slide_1_dashboard_overview.png
+├── slide_2_attrition_risk.png
+├── slide_3_workforce_composition.png
+├── slide_4_career_mobility.png
+├── slide_5_pay_equity.png
+├── slide_6_training_absence.png
+├── slide_7_people_experience.png
+└── slide_8_recommendations.png
+```
+
+---
+
+## 11. Repository Structure
+
+```text
+HR-People-Analytics-Dashboard/
 ├── data/
-│   └── Raw and cleaned HR datasets
+│   ├── raw/
+│   │   └── original_hr_dataset.csv
+│   └── cleaned/
+│       └── cleaned_hr_dataset.csv
+├── images/
+│   ├── hr_people_analytics_dashboard.png
+│   ├── slide_1_dashboard_overview.png
+│   ├── slide_2_attrition_risk.png
+│   ├── slide_3_workforce_composition.png
+│   ├── slide_4_career_mobility.png
+│   ├── slide_5_pay_equity.png
+│   ├── slide_6_training_absence.png
+│   ├── slide_7_people_experience.png
+│   └── slide_8_recommendations.png
 ├── outputs/
-│   └── Dashboard outputs and supporting visual files
+│   └── exported_dashboard_files/
 ├── HR_EDA.ipynb
-│   └── Python notebook for data cleaning and exploratory analysis
 ├── HR_Dashboard.twbx
-│   └── Tableau packaged workbook
-├── HR_Dashboard.png
-│   └── Full dashboard screenshot
 ├── HR_People_Analytics_Dashboard_Report.docx
-│   └── Written report explaining business problem, insights, and recommendations
 ├── HR_People_Analytics_Deck.pptx
-│   └── Presentation deck summarising dashboard insights
 └── README.md
 ```
 
 ---
 
-## Business Value
+## 12. Business Value
 
-This dashboard helps HR leaders move from static reporting to evidence-based workforce decision-making. It provides a structured way to identify where people risks are concentrated, understand which workforce groups may need attention, and prioritise actions using dashboard evidence.
+This project demonstrates how a data analyst can move from raw HR data to business action.
+
+The value of the project is not only the dashboard design, but the full analytical process:
+
+1. Understand the HR business problem
+2. Explore the data using Python
+3. Clean and prepare the dataset
+4. Build an interactive Tableau dashboard
+5. Identify meaningful workforce insights
+6. Present findings through PowerPoint storytelling
+7. Recommend practical actions for business leaders
+8. Publish the dashboard for portfolio and stakeholder access
 
 The project demonstrates skills in:
 
-- Business problem framing
-- HR analytics
-- Data cleaning and preparation
-- KPI dashboarding
-- Tableau visualisation
-- Insight communication
-- Workforce risk analysis
-- Evidence-based recommendations
+* Data cleaning
+* Exploratory data analysis
+* HR analytics
+* KPI dashboarding
+* Tableau visualisation
+* Business storytelling
+* Insight communication
+* Workforce risk analysis
+* Evidence-based recommendations
 
 ---
 
-## Project Status
+## 13. Project Outcome
 
-Completed as an academic analytics and dashboarding project for Visualising and Communicating Insights in Business.
+The final output is an interactive Tableau dashboard supported by a written report and a PowerPoint insight presentation.
+
+The dashboard helps HR leaders monitor workforce risk, identify priority employee groups, and make more informed decisions around retention, career mobility, pay equity review, training effectiveness, and employee experience.
 
 ---
 
-## Author
+## 14. Author
 
-Khoa Nguyen  
-Master of Business Information Technology  
+Khoa Nguyen
+Master of Business Information Technology
 RMIT University
+::: 
